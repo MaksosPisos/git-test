@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-wrapper">
+                <button class="header-burger">
+                    <img src="./img/svg/header-burger.svg" alt="Burger" class="header-on">
+                    <img src="./img/svg/header-close.svg" alt="close" class="header-close">
+                </button>
+                <div class="header-nav">
+                    <a href="./shop.html"> Магазин </a>
+                    <a href="./about.html"> О нас </a>
+                    <a href="./contacts.html"> Контакты </a>
+                </div>
+                <a href="./index.html" class="header-logo_link">
+                    <img src="./img/svg/header-logo.svg" alt="Header logo">
+                </a>
+
+
+                <div class="header-search">
+                    <div class="header-contact">
+                        <div class="header-contact_phone">
+                            +38 (095) 88 265 99
+                        </div>
+
+                        <div class="header-contact_social">
+                            <img src="./img/svg/header-contact_inst.svg" alt="Inst">
+                            <img src="./img/svg/header-contact_viber.svg" alt="viber">
+                            <img src="./img/svg/header-contact_whatsapp.svg" alt="whatsapp">
+                            <img src="./img/svg/header-contact_telegram.svg" alt="telegram">
+
+                        </div>
+
+
+                    </div>
+                    <div class="header-search_img">
+                        <img src="./img/svg/header-search.svg" alt="search">
+                        <img src="./img/svg/header-bag.svg" alt="bag">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="monmou">
+        <div class="wrapper">
+            <div class="monmou-wrapper">
+                <!-- <div class="monmou-fake">
+
+                </div> -->
+
+                <div class="monmou_title">
+                    <h1>
+                        MON MOU
+                    </h1>
+
+                    <div class="monmou-subtitle">
+                        новая философия <div> бережного ухода за кожей</div> и волосами.
+                    </div>
+                    <div class="monmou-subtitle_min768px">
+                        новая философия бережного ухода за <div>кожей и волосами.</div>
+                    </div>
+
+
+
+                    <a href="#" class="btn btn-monmou_title"> Смотреть </a>
+                    <a href="#" class="btn-transparent btn-monmou_title__transparent"> Хотите попробовать ? </a>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="monmou-footer">
+        Бесплатная доставка при заказе от 2000 гривен
+    </div>
+
+    <div class="foto">
+        <div class="wrapper">
+            <div class="foto-wrapper">
+                <div class="foto-wrapper_item1"></div>
+                <div class="foto-wrapper_item2"></div>
+                <div class="foto-wrapper_item3"></div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const burger = document.querySelector('.header-burger')
+        const menu = document.querySelector('.header-nav')
+        const header = document.querySelector('.header')
+        const header_wrapper = document.querySelector('.header-wrapper')
+        const header_contact = document.querySelector('.header-contact')
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('open')
+            menu.classList.toggle('open')
+            header_wrapper.classList.toggle('open')
+            header.classList.toggle('open')
+            header_contact.classList.toggle('open')
+        })
+    </script>
+
+
+
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer_wrapper">
+                <div class="footer-nav">
+                    <a href="./index.html">главная</a>
+                    <a href="./about.html">о нас</a>
+                    <a href="./contacts.html">Контакты</a>
+                    <a href="./shop.html">Магазин</a>
+                </div>
+
+                <div class="footer-about">
+                    <a href="#">сотрудничество</a>
+                    <a href="#">возврат и обмен</a>
+                    <a href="#">доставка</a>
+                </div>
+
+
+                <div class="footer-img">
+                    <img src="./img/svg/footer_applpay.svg" alt="apple">
+                    <img src="./img/svg/footer_mastercard.svg" alt="ms">
+                    <img src="./img/svg/footer_visa.svg" alt="visa">
+                </div>
+
+            </div>
+
+
+        </div>
+    </footer>
+</body>
+
+</html>
